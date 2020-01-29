@@ -22,6 +22,7 @@ are supported over plain TCP, TLS, WebSockets and Secure WebSockets.
 module Network.MQTT.Client (
   -- * Configuring the client.
   MQTTConfig(..), MQTTClient, QoS(..), Topic, mqttConfig,  mkLWT, LastWill(..),
+  ConnState(..),
   ProtocolLevel(..), Property(..), SubOptions(..), subOptions, MessageCallback(..),
   -- * Running and waiting for the client.
   waitForClient,
